@@ -95,7 +95,6 @@ type IssueFields struct {
 	//      * "lastViewed": null,
 	//      * "aggregatetimeoriginalestimate": null,
 	//      * "aggregatetimeestimate": null,
-	//      * "environment": null,
 	Expand               string        `json:"expand,omitempty" structs:"expand,omitempty"`
 	Type                 IssueType     `json:"issuetype,omitempty" structs:"issuetype,omitempty"`
 	Project              Project       `json:"project,omitempty" structs:"project,omitempty"`
@@ -108,6 +107,7 @@ type IssueFields struct {
 	Assignee             *User         `json:"assignee,omitempty" structs:"assignee,omitempty"`
 	Updated              Time          `json:"updated,omitempty" structs:"updated,omitempty"`
 	Description          string        `json:"description,omitempty" structs:"description,omitempty"`
+	Environment          string        `json:"environment,omitempty" structs:"environment,omitempty"`
 	Summary              string        `json:"summary,omitempty" structs:"summary,omitempty"`
 	Creator              *User         `json:"Creator,omitempty" structs:"Creator,omitempty"`
 	Reporter             *User         `json:"reporter,omitempty" structs:"reporter,omitempty"`
