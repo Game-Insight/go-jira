@@ -288,7 +288,7 @@ type Progress struct {
 
 // Parent represents the parent of a JIRA issue, to be used with subtask issue types.
 type Parent struct {
-	ID  string `json:"id,omitempty" structs:"id"`
+	//ID  string `json:"id,omitempty" structs:"id"`
 	Key string `json:"key,omitempty" structs:"key"`
 }
 
